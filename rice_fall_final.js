@@ -67,7 +67,7 @@ class Rice{
     this.x = this.startingX;
     this.y = this.startingY;
     this.fallingRadius = 0; // they fall away from the hole
-    this.radiusFallingSpeed = random(-0.1,4); // how fast to fly awway from the hole;
+    this.radiusFallingSpeed = random(-0.1,3); // how fast to fly awway from the hole;
     this.angle = a;
     //this.size = 48;
     this.startingHeight = 100;
@@ -98,7 +98,7 @@ class Rice{
     stroke(10)
     fill(255)
     rotate( this.Degree);
-   ellipse(0, 0, 65,7)
+   ellipse(0, 0, 25,7)
     pop();
   } 
 }
