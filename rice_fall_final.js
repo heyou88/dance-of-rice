@@ -33,7 +33,7 @@ function draw() {
 class Hole{
   constructor(cX, cY, radius, startingAngle){
     this.centerX = cX;
-    this.centerY = cY;
+    this.centerY = cY+20;
     this.r = radius;
     this.angle = startingAngle;
     this.x = this.centerX + cos(radians(this.angle)) * this.r;
