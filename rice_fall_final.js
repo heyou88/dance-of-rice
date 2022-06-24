@@ -38,7 +38,7 @@ class Hole{
     this.angle = startingAngle;
     this.x = this.centerX + cos(radians(this.angle)) * this.r;
     this.y = this.centerY + sin(radians(this.angle)) * this.r;
-    this.speed = 1;
+    this.speed = 4;
   }
   update(){
     this.angle += this.speed;
@@ -67,7 +67,7 @@ class Rice{
     this.x = this.startingX;
     this.y = this.startingY;
     this.fallingRadius = 0; // they fall away from the hole
-    this.radiusFallingSpeed = random(-2,3); // how fast to fly awway from the hole;
+    this.radiusFallingSpeed = random(-5,5); // how fast to fly awway from the hole;
     this.angle = a;
     //this.size = 48;
     this.startingHeight = 100;
