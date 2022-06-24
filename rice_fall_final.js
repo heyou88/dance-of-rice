@@ -98,7 +98,7 @@ class Rice{
     stroke(10)
     fill(255)
     rotate( this.Degree);
-   ellipse(0, 0, 25,7)
+   ellipse(0, 0, 65,7)
     pop();
   } 
 }
