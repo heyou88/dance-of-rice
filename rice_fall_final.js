@@ -8,7 +8,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   hole1 = new Hole(width/2, height/2, 350, 0);
-    hole2 = new Hole(width/2, height/2, 410, 180); 
+    hole2 = new Hole(width/2, height/2, 370, 180); 
 }
 function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
@@ -67,7 +67,7 @@ class Rice{
     this.x = this.startingX;
     this.y = this.startingY;
     this.fallingRadius = 0; // they fall away from the hole
-    this.radiusFallingSpeed = random(-0.1,3); // how fast to fly awway from the hole;
+    this.radiusFallingSpeed = random(-2,3); // how fast to fly awway from the hole;
     this.angle = a;
     //this.size = 48;
     this.startingHeight = 100;
