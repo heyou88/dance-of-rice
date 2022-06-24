@@ -8,7 +8,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   hole1 = new Hole(width/2, height/2, 320, 0);
-    hole2 = new Hole(width/2, height/2, 350, 180); 
+    hole2 = new Hole(width/2, height/2, 340, 180); 
 }
 function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
@@ -38,7 +38,7 @@ class Hole{
     this.angle = startingAngle;
     this.x = this.centerX + cos(radians(this.angle)) * this.r;
     this.y = this.centerY + sin(radians(this.angle)) * this.r;
-    this.speed = 4;
+    this.speed = 3;
   }
   update(){
     this.angle += this.speed;
@@ -46,7 +46,7 @@ class Hole{
      this.y = this.centerY + sin(radians(this.angle)) * this.r;
     
      //produce rice sometimes:
-    if(random()<0.1){
+    if(random()<0.08){
       ricecorns.push( new Rice(this.x, this.y, this.angle) )
       
     }
