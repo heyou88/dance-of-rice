@@ -8,7 +8,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   hole1 = new Hole(width/2, height/2, 350, 0);
-    hole2 = new Hole(width/2, height/2, 350, 180); 
+    hole2 = new Hole(width/2, height/2, 390, 180); 
 }
 function windowResized() {
    resizeCanvas(windowWidth, windowHeight);
